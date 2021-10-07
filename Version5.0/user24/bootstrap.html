@@ -1,15 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:
-    Date Completed: 
+    Name: Jaron 
+    Date Completed: 10/07/21
 -->
 
 <head>
+    <title>My Bootstrap logic</title>
+
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #e4c514;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #d4f77d;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+        .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgb(216, 66, 66);
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="list-group">
+            <a href="" class="list-group-item list-group-item-action active">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU74ZHmee3RBd-u3ivLdnHGyk_7iME0HEiSw&usqp=CAU" class="list-group-item list-group-item-action">
+                <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">4,672</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=rJlY1uKL87k&t=1061s" class="list-group-item list-group-item-action">
+                <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">2</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=imU4sqdDYlE&list=LL&index=1" class="list-group-item list-group-item-action">
+                <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">1,495</span>
+            </a>
+            <a href="https://www.apple.com/iphone-13-pro/" class="list-group-item list-group-item-action">
+                <i class="fa fa-apple"></i> Apple <span class="badge badge-pill badge-primary pull-right">1</span>
+            </a>
+            <a href="https://www.youtube.com/watch?v=zm-SrgaL8do" class="list-group-item list-group-item-action">
+                <i class="fa fa-youtube-play"></i> Youtube <span class="badge badge-pill badge-primary pull-right">141</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-power-off"></i> Exit <span class="badge badge-pill badge-primary pull-right">0</span>
+            </a>
+            <a href="https://github.com/6308-75-II2-TheMostAdvancedNameToDate" target="_blank"  class="list-group-item list-group-item-action">
+                <i class="fa fa-user-circle-o"></i> Join Me <span class="badge badge-pill badge-primary pull-right">14</span>
+            </a>
+        </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>Bootstrap Form</title>
+
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style>
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
 
 </head>
 
 <body>
+    <div class="bs-example">
+        <form action="confirmation.html" method="post">
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="inputEmail"
+                        value=HuTuminue@Mail.com>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+    <td>1</td>
+    <td>Chad</td>
+    <td>N/A</td>
+    <td>ChadisChad@mail.com</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Jimmy</td>
+    <td>T</td>
+    <td>DanceChampion@gmail.com</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Poggie</td>
+    <td>Woggie</td>
+    <td>50/50Winner@icloud.com</td>
+
+    <div class="jumbotron">
+        <h4> Bootscape Examples</h4>
+        <p class="lead"> Let's look at the man
+        </p>
+    </div>
+    <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
+    <!---------Three Column Layouts--------->
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="demo-content">Robert's got a quick hand</div>
+            </div>
+            <div class="col-md-6">
+                <div class="demo-content bg-alt">He'll look around the room he won't tell you his plan</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content">He's got a rolled cigarette</div>
+            </div>
+            <div class="col-md-8">
+                <div class="demo-content bg-alt">Hanging out his mouth, he's a cowboy kid</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="demo-content">Yeah, he found a six shooter gun</div>
+            </div>
+            <div class="col-md-9">
+                <div class="demo-content bg-alt">In his dad's closet, in a box of fun things
+                </div>
+            </div>
+        </div>
+
+        <!---------Auto Layout Columns--------->
+        <div class="row">
+            <div class="col demo-content">And I don't even know what</div>
+            <div class="col demo-content bg-alt">But he's coming for you, yeah, he's coming for you</div>
+            <div class="col demo-content">All the other kids with the pumped up kicks</div>
+            <div class="col demo-content bg-alt">You better run, better run, outrun my gun</div>
+        </div>
+
+        <!---------Flexible Layouts--------->
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="demo-content">All the other kids with the pumped up kicks</div>
+            </div>
+            <div class="col-md-8 col-lg-6">
+                <div class="demo-content bg-alt">You better run, better run faster than my bullet</div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="demo-content">Thanks for listening~</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

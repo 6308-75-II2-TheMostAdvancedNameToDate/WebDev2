@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 7.0 
+    Name:  
+    Date Completed: 
+--> 
+<head>
+    <title>Fair</title>
+      <!-- Bootstrap meta data -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Introduction to JavaScript">
+  
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+      <!--  -->
+      <link rel="stylesheet" href="CSS/style.css">
+  
+      <!-- JavaScript -->
+      <!-- These are needed to get the responsive menu to work -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+      <style>
+          
+      </style>
+  
+  </head>
+  
+  <body>
+    <SCRIPT>
+
+        /*
+        By Michael Dillon  drevil_nz@hotmail.com
+        Featured on JavaScript Kit (http://javascriptkit.com)
+        For this and over 400+ free scripts, visit http://javascriptkit.com
+        */
+        
+        var val=""
+        var counter="0"
+        themessage=new Array()
+        themessage[0]="Today is going pretty well. I had a yummy lunch and now my tum tum is really happy so I'm happy!"
+        themessage[1]="I stepped out onto the deck when the full moon was shining the brightest. I felt a cool breeze go by me and turned to see them. I tried to keep my cool and ask how it's going but ended up shitting my pants."
+        themessage[2]="Robert's got a quick hand. He'll look around the room, he won't tell you his plan. He's got a rolled cigarette. Hanging out his mouth, he's a cowboy kid. Yeah, he found a six shooter gun.  In his dad's closet, with a box of fun things. I don't even know what. But he's coming for you, yeah, he's coming for you. All the other kids with the pumped up kicks. You better run, better run, outrun my gun. All the other kids with the pumped up kicks. You better run, better run faster than my bullet. All the other kids with the pumped up kicks. You better run, better run, outrun my gun. All the other kids with the pumped up kicks. You better run, better run faster than my bullet"
+        themessage[3]="Suavemente, bésame. Que quiero sentir tus labios. Besándome otra vez. Suavemente, bésame. Que quiero sentir tus labios. Besándome otra vez. #GanandorfDance"
+        themessage[4]="The coconut nut is a giant nut. If you eat too much, you'll get very fat. Now, the coconut nut is a big, big nut. But this delicious nut is not a nut. It's the coco fruit (it's the coco fruit). Of the coco tree (of the coco tree). From the coco palm family. There are so many uses of the coconut tree. You can build a bigger house for the family. All you need is to find a coconut man. If he cuts the tree, he gets the fruits free. It's the coco fruit (it's the coco fruit). Of the coco tree (of the coco tree). From the coco palm family"
+        themessage[5]="One time I ran a lap around the indoor track and then this absolute CHAD wanted to race me because I was going pretty fast. He ran like a gazelle and was so elegent. We were right next to each other for a while and then another person joined in for no reason. We were both shocked but It caught him more of guard than me so I got the win."
+        themessage[6]="When he said 'You are not the caretaker' I blasted dance till your dead bass boosted edition and dived into the crowd happily. Nobody caught me. "
+        themessage[7]="One time when we were in Costa Rica, there was a monkey that came up to me with a stick I took a few pictures and then started to walk away but then the Lil chump threw the stick like a spear at me, and then ran away saying some gibberish."
+        themessage[8]="One time I got pushed overboard on a cruise and landed on a fish. It was a lil small one but...I think I killed it."
+        themessage[9]="One time I was walking in a store and didn't notice how much they mopped the floor and turned a different way and just completely ate shit."
+        themessage[10]="I laid in the grass recently. It felt really good but then I found out that I was laying in dog waste. I shuffled back into my house quietly."
+        themessage[11]="A secret I have is...*ahem*  One time I had to use the bathroom at school so I left class to go. When I got into the bathroom I noticed nobody else was in there so I farted. Let's just say...I gambled and lost..."
+        themessage[12]="I was listening to some really good music the other night. It hit harder than the car I took out."
+        themessage[13]="Do you sleep on your stomach? If so lemme sleep on it. I bet it's hella comfy."
+        themessage[14]="Dancing is pretty weird at a school dance. But when I do dance, I make sure it's with someone else so I can feel 2% less cringe."
+        themessage[15]="Making out is something I yearn for! When that day happens for me I'll lick their tongue! Damn that'll be a good day..."
+        themessage[16]="One time I put a pickle in my mouth and sucked the pickle juice out. It was really good but when I took the pickle out saliva stuck to the pickle and a stranger saw it and I "
+        themessage[17]="Was my father a terrorist? I'm unsure... but what I do know is I am a hot bomb."
+        themessage[18]="Reminder that these are based on irrelevent topics 'you' are proud to share. Denial is only going to make the reality worse. Accept your fate. "
+        themessage[19]="One day, I went swimming and felt the temperature of the water change. I then realized it was a middle aged woman near me that peed. I could tell based on her odd facial expression. "
+        
+        x=Math.floor(Math.random()*themessage.length)
+        
+        function changer(){
+        if(counter>=themessage[x].length){return false}
+        else{
+        val+=themessage[x].charAt(counter)
+        document.myform.mytext.value=val
+        counter++
+        return false
+        }
+        }
+        function resetit(){
+        alert("Oh...uh that's interesting.")
+        document.myform.mytext.value=""
+        counter="0"
+        val=""
+        x=Math.floor(Math.random()*themessage.length)
+        }
+        
+        </SCRIPT>
+
+        <DIV align=left>
+        <TABLE height=200 cellSpacing=0 cellPadding=0 width=550 border=0>
+          <TBODY>
+          <TR>
+            <TD vAlign=top width=542 height=182><FONT face=Arial>
+              <FORM name=myform>
+             <P><Big>Type below:</Big></P>
+              <P><FONT face=Arial><TEXTAREA onkeypress="return changer()" name=mytext rows=10 wrap=virtual cols=40></TEXTAREA><BR><BR><INPUT onclick=resetit() type=button value="Share"></FONT></P></FORM></TD></TR></TBODY></TABLE>
+        </center>
+            </DIV>
+        
+        <script language="javascript">
+
+            //Western & Chinese Astrological Sign Calculator- By Timothy Joko-Veltman
+            //Email: restlessperegrine@yahoo.com URL: http://openmind.digitalrice.com
+            //Visit JavaScript Kit (http://javascriptkit.com) for script
+            
+            function signs() {
+            var start = 1901, birthyear = document.zodiac.year.value, date=document.zodiac.date.value, birthyear = document.zodiac.planet.selectedIndex, month=document.zodiac.month.selectedIndex;
+            
+            with (document.zodiac.signs){
+            
+            if (month == 1 && date >=20 || month == 2 && date <=18) {value = "Aquarius";}
+            if (month == 1 && date > 31) {value = "Huh?";}
+            if (month == 2 && date >=19 || month == 3 && date <=20) {value = "Pisces";}
+            if (month == 2 && date > 29) {value = "Say what?";}
+            if (month == 3 && date >=21 || month == 4 && date <=19) {value = "Aries";}
+            if (month == 3 && date > 31) {value = "OK.  Whatever.";}
+            if (month == 4 && date >=20 || month == 5 && date <=20) {value = "Taurus";}
+            if (month == 4 && date > 30) {value = "I'm soooo sorry!";}
+            if (month == 5 && date >=21 || month == 6 && date <=21) {value = "Gemini";}
+            if (month == 5 && date > 31) {value = "Umm ... no.";}
+            if (month == 6 && date >=22 || month == 7 && date <=22) {value = "Cancer";}
+            if (month == 6 && date > 30) {value = "Sorry.";}
+            if (month == 7 && date >=23 || month == 8 && date <=22) {value = "Leo";}
+            if (month == 7 && date > 31) {value = "Excuse me?";}
+            if (month == 8 && date >=23 || month == 9 && date <=22) {value = "Virgo";}
+            if (month == 8 && date > 31) {value = "Yeah. Right.";}
+            if (month == 9 && date >=23 || month == 10 && date <=22) {value = "Libra";}
+            if (month == 9 && date > 30) {value = "Try Again.";}
+            if (month == 10 && date >=23 || month == 11 && date <=21) {value = "Scorpio";}
+            if (month == 10 && date > 31) {value = "Forget it!";}
+            if (month == 11 && date >=22 || month == 12 && date <=21) {value = "Sagittarius";}
+            if (month == 11 && date > 30) {value = "Invalid Date";}
+            if (month == 12 && date >=22 || month == 1 && date <=19) {value = "Capricorn";}
+            if (month == 12 && date > 31) {value = "No way!";}
+            if (month == 11 && date >=30 || month == 12 && date <=17) {value = "Ophiuchus";}
+            if (month == 12 && date > 31) {value = "Yoooo";}
+            }
+            x = (start - birthyear) % 12
+            with (document.zodiac.csign){
+            if (x == 1 || x == -11) {value = "Rat";}
+            if (x == 0) {value = "Ox";}
+            if (x == 11 || x == -1) {value = "Rawr Tiger";}
+            if (x == 10 || x == -2) {value = "Bunny/Kitty";}
+            if (x == 9 || x == -3)  {value = "Dragon RAWRR";}
+            if (x == 8 || x == -4)  {value ="Snake hiss";}
+            if (x == 7 || x == -5)  {value = "Horse.";}
+            if (x == 6 || x == -6)  {value = "Sheep";}
+            if (x == 5 || x == -7)  {value = "Monkey";}
+            if (x == 4 || x == -8)  {value = "Cock/Phoenix";}
+            if (x == 3 || x == -9)  {value = "Puppy";}
+            if (x == 2 || x == -10)  {value = "Boar/Pig";}  
+            
+            }
+            with (document.zodiac.planets){
+            
+            if (month == 1 && date >=20 || month == 2 && date <=18) {value = "Uranus";}
+            if (month == 1 && date > 31) {value = "lol";}
+            if (month == 2 && date >=19 || month == 3 && date <=20) {value = "Neptune";}
+            if (month == 2 && date > 29) {value = "Nub";}
+            if (month == 3 && date >=21 || month == 4 && date <=19) {value = "Mars";}
+            if (month == 3 && date > 31) {value = "Alright fine with me:)";}
+            if (month == 4 && date >=20 || month == 5 && date <=20) {value = "Venus";}
+            if (month == 4 && date > 30) {value = "NO you're not";}
+            if (month == 5 && date >=21 || month == 6 && date <=21) {value = "Mercury";}
+            if (month == 5 && date > 31) {value = "vroom vr";}
+            if (month == 6 && date >=22 || month == 7 && date <=22) {value = "Moon";}
+            if (month == 6 && date > 30) {value = "I get around";}
+            if (month == 7 && date >=23 || month == 8 && date <=22) {value = "Sun";}
+            if (month == 7 && date > 31) {value = "get around";}
+            if (month == 8 && date >=23 || month == 9 && date <=22) {value = "Mercury";}
+            if (month == 8 && date > 31) {value = "round round";}
+            if (month == 9 && date >=23 || month == 10 && date <=22) {value = "Venus";}
+            if (month == 9 && date > 30) {value = "around around.";}
+            if (month == 10 && date >=23 || month == 11 && date <=21) {value = "Pluto";}
+            if (month == 10 && date > 31) {value = "Get around yoooohhohh";}
+            if (month == 11 && date >=22 || month == 12 && date <=21) {value = "Jupiter";}
+            if (month == 11 && date > 30) {value = "Creme cheese";}
+            if (month == 12 && date >=22 || month == 1 && date <=19) {value = "Saturn";}
+            if (month == 12 && date > 31) {value = "No yes!";}
+            if (month == 11 && date >=30 || month == 12 && date <=17) {value = "Stars";}
+            if (month == 12 && date > 31) {value = "Piggy";}
+            }
+            
+            
+        }
+            </script>
+            
+            <center><b>Calculate your Western and Chinese Astrological Signs</b></center>
+            <form name="zodiac">
+            <center>
+            <table bgcolor="#eeaa00" border="2" bordercolor="#000000" rules="none" cellspacing="0" cellpadding="4">
+                <tr><td><b><i>Year</i></b></td>
+                <td><div align="right"><input type="text" size="10" name="year" value="Birth Year" onClick=value=""></div></td>
+                <td><!--This empty field is just for appearance--></td>
+                <tr><td><b><i>Month</i></b></td>
+                <td><div align="right">
+            <select name="month">
+            <option value="x">Select Birth Month</option>
+            <option value="1">January</option><option value="2">February</option><option value="3">March</option>
+            <option value="4">April</option><option value="5">May</option><option value="6">June</option>
+            <option value="7">July</option><option value="8">August</option><option value="9">September</option>
+            <option value="10">October</option><option value="11">November</option>
+            <option value="12">December</option></select></div></td>
+                <td><!--This empty field is just for appearance--></td></tr>
+                <tr><td><b><i>Day</i></b></td>
+                <td><div align="right"><input type="text" name="date"value="Day" size="3" onClick=value=""></td>
+                <td><input type="button" value="Calculate" onClick="signs()"></div></td></tr>
+                <tr><td><b><i>Zodiac Sign:</i></b></td>
+                <td><div align="right"><input type="text" name="sign" size="12" value="" align="right"></div</td></tr>
+                <td><!--This empty field is just for appearance--></td></tr>
+                <tr><td><b><i>Chinese Sign:</i></b></td>
+                <td><div align="right"><input type="text" name="csign" size="12"></div></td>
+                <td><!--This empty field is just for appearance--></td></tr>
+            
+            </table>
+            </center>
+            </form>
+            <div>      
+                <script language="JavaScript">
+
+                var startTime = new Date();
+                var endTime = new Date();
+                var startPressed = false;
+                var bgChangeStarted = false;
+                var maxWait = 20;
+                var timerID;
+                var stopBtnX;
+                var stopBtnY;
+    
+                function getRandom(min, max) {
+                    min = Math.ceil(-100);
+                    max = Math.floor(100);
+                    stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
+                    stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
+                }
+    
+                function startTest() {
+                    document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                    bgChangeStarted = true;
+                    startTime = new Date();
+    
+                    var i;
+                    for (i = 1; i < 4; i++) {
+                        getRandom();
+                        document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                    }
+    
+                }
+    
+                function remark(responseTime) {
+                    var responseString = "";
+                    if (responseTime < 0.10)
+                        responseString = "Try to beat my score of 0.064 if your so confident."
+                    if (responseTime >= 0.15 && responseTime < 0.10)
+                        responseString = "Not bad. Not bad...";
+                    if (responseTime >= 0.20 && responseTime < 0.30)
+                        responseString = "Huh...it appears you are improving...";
+                    if (responseTime >= 0.40 && responseTime < 0.50)
+                        responseString = "Nice!";
+                    if (responseTime >= 0.50 && responseTime < 0.80)
+                        responseString = "Keep practicing!";
+                    if (responseTime >= 0.80 && responseTime < 1.1)
+                        responseString = "Have you been day dreaming again?";
+                    if (responseTime >= 1.1)
+                        responseString = "Did you fall asleep silly?";
+                    if (responseTime >= 10.0 && responseTime < 11.0)
+                        responseString = "No where to hide."
+                    if (responseTime >= 25.0 && responseTime < 30.0)
+                        responseString = "Don't worry...I'll assist you to the afterlife..."
+                    if (responseTime >= 55.0 && responseTime < 60.0)
+                        responseString = "Ṟ̴̤͎̣̲̞͙̬̈́́̒̊̽̑̒͗̔͠e̴͔̰̤̬̭͚̥͖̣̍͌l̷͈̹̬̟͍̠̝̀̋̾̀̔̎ͅí̴̡̙͍̘͓̣̘̹̖̫͐̌̄̀͊̚͝͠͠n̷̤̒q̵̢̨̡̘̺̮̣̫͔͚̍̈̿͆͋͑u̶̡̙̝͔̟͚͎͚̩̗͂͊͌͋̑ḯ̶̺͙̪̄̈̇͗̀s̵̢̖̠̓̎̌̑̓̐̄̋̇͠h̵͈͕̤̝̼̱̝͈̬́̓͋̊̉̈́̒̋̚ ̶͈̃̇͠y̴̨̡̛̛͔͇͚̮͂̀̾͆̈́͘͠͝o̸͙͍̬̝̭̭̼̣̯̦͗̓̀͛́͐̇̃̆̕u̴̧͈̮̪̖̪̻̜͙͈͆́̀̒̂̔͝ȑ̶̦̝̙̮̫͍̜̜͐̾̿̀̀ ̷̢̛̠̙̞̪̳͗͒̄́͗̚͜͠ā̵̛̘̔̓̂͒ţ̴̫͓̟͇͈͌̌̏̅̒̈̋͜͝t̶̩͍̜̯̘͕̣͌̈́̉̽ë̵͖͈͖̻̹̰̦̞́̀͌̄́͘̚͝m̷̧̢͎̘͇̬͇͂̾̃̋̐̂̄͘̕͝p̵̛̞̮͇̰̰͈̱̰̱̀̒̄́͆͆͋̄̍ṭ̵̹̣̫͕͙̘̑̄͌̾̒̑͛͠s̴̡̮̈́͂̈́̋̒̐̑́ ̷̪̋̓̓o̵̦͋̌͗̔̑͒͊̑n̶̢͈̤̠̼̯̾̓ ̵̛̛̳̠̘͓͎͉̺͈̮̂̀̿̈́̓́̚ͅţ̴̦̤̠̠̩̪͑̀̿̌͠h̸̢͈͓̟̰̣͔͍̊͛i̶̡̼̻̣̎̋̔͆̍ͅŝ̴̡̡̨̼̰̜͎̞̳͇̽̓͐̈́́ ̸̲̊̋́͛̕͝t̴̞̩̆̉̉̈́̾͠ë̵̪̲̜͍̙́́̇̍̾̋͠s̵̖̳̣̘̔͛ț̵́̿̏̐.̵͖̬̹̃̇̃̑̀ ̵̛̮̱̖̠͉̹͎̱̺Y̷̧̬̫̯̍̏o̵̢͇͚̬͍͍̗̭͑̎͘u̵͕̳͈̟̗̬͍̎́̅̂͝͝ ̶͖̝͍̬̥͕͙͙͔̆̈́̈́ą̷̯̈̋͛r̴͙̕ͅé̵̮̦̱̂̀̄̑̔͜ ̴̨̞͚͎̼̀̆͋̄̃͑͘i̶̧͖͍͈̲͒̊̀̃̃n̷̳͚̭̙͝ę̷̻̭̗̰͖̝̖͓͌̌̈́̇̀̂͐̈͝l̵̪͎̣̗̗̪̓͊͒̾͝͝i̶̢͊̋̽͊̕͘ǵ̸̲͑̉̄ͅĩ̵͓͙͕̳̩̟̏̀̈́̀͆̿̑̚͝ḅ̶͔̪̥̖̘͝l̴̲̩̻͍̪̥̝̞̽͜é̴̫̖͚̉͜͠ ̴̯͉̺͌̇̉͂͌̀̚ͅf̴̻̠̙͙͉̉̓͗́͛͌̋̽̕͜ͅo̷͎͍̬̘̜̿̒̋͆̇͝ͅͅr̷̡̢͇̺͚̹̜̻͋͜ ̸̨͎̠̱̘̼̙̤͆̂̐c̸̞̞͎̼̻̽̓̀͊̔͛́̀͘͜ó̷̦͔̥̟̮̄̅͊̈̃̓̿̉͜͝ͅǹ̷̡̡̡̰̳͉̻̤̓̀̈́̆͊̓͊͝ͅţ̶̨͇̘̤͇̫̤̎̎͑͝i̸̖̙̿͂̐̋̎͆̾n̵̗̤̣̖̍̀̂̑̅ư̷̗̣̝̭̙̞̹̎́̏̊̄́̾å̴͈̥͉̯̭̙̘̃͜t̵̠͍̊̾î̷̛̖͍͖̔͐̀̎̓o̸̲̺͚̦̱̒͑̄̈̀̽̄̆̚n̴͈̺͋̿͠ș̶̫͗̂̓͐̔͒̀̿̓͜͠.̸̧̪͙̝̬͈͎̣̩̓̓.̵̭͒͜.̸̡͈̼͙̟͙̪̑͗̊͛̈́̏̌"
+                    return responseString;
+    
+                }
+    
+                function stopTest() {
+                    if (bgChangeStarted) {
+                        endTime = new Date();
+                        var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                        document.body.style.background = "white";
+                        alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                        startPressed = false;
+                        bgChangeStarted = false;
+                    }
+                    else {
+                        if (!startPressed) {
+                            alert("press start first to start test");
+                        }
+                        else {
+                            clearTimeout(timerID);
+                            startPressed = false;
+                            alert("Hmph! You pressed too early mortal.");
+                        }
+                    }
+                }
+    
+                var randMULTIPLIER = 0x015a4e35;
+                var randINCREMENT = 1;
+                var today = new Date();
+                var randSeed = today.getSeconds();
+    
+                function randNumber() {
+                    randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                    return ((randSeed >> 15) & 0x7fff) / 32767;
+                }
+    
+                function startit() {
+                    if (startPressed) {
+                        alert("Already started. Press stop to stop");
+                        return;
+                    }
+                    else {
+                        getRandom();
+                        startPressed = true;
+                        timerID = setTimeout('startTest()', 6000 * randNumber());
+                    }
+                }
+    
+            </script>
+            <p>Test your Response time!</p>
+            Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+    
+            <form name="response">
+                Change background color in:
+                <select name="bgColorChange">
+                    <option selected>Ponk
+                    <option>pureBlue
+                    <option>Crimson
+                    <option>dark+
+                    <option>OceanOrSomething
+                    <option>darkMode
+                    <option>coral
+                </select>
+                <input type="button" value="start" onClick="startit()">
+                <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            </form>
+        </div>
+    <body>
